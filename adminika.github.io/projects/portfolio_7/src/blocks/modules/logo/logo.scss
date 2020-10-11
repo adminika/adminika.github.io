@@ -1,0 +1,29 @@
+/*============================
+=            Logo            =
+============================*/
+
+.logo {}
+.logo__inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 27px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+.logo__title {
+	color: #282828;
+	font-size: 100px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.logo__subtitle {
+	color: #4a4a4a;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/*=====  End of Logo  ======*/

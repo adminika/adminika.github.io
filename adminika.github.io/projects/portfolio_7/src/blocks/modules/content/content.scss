@@ -1,0 +1,11 @@
+/*===============================
+=            Content            =
+===============================*/
+
+.content__inner {
+	margin-top: 35px;
+	margin-bottom: 35px;
+	@include row-flex();
+}
+
+/*=====  End of Content  ======*/

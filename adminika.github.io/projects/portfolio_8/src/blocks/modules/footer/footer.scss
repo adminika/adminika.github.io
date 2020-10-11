@@ -1,0 +1,26 @@
+.footer {
+	background-color: #4f4f4f;
+}
+.footer__wrapper {
+	@include row-flex();
+	justify-content: space-between;
+	align-items: center;
+}
+.address {
+	@include col();
+	@include size(7);
+	
+	padding-top: rem(36);
+	padding-bottom: rem(30);
+	font-size: 16px;
+	font-weight: 400;
+	color: #6e6e6e;
+}
+.copyright {
+	@include col();
+	@include size(5);
+
+	color: #6e6e6e;
+	font-size: 16px;
+	font-weight: 400;
+}
