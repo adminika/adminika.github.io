@@ -1,0 +1,64 @@
+/*==============================
+=            TopBar            =
+==============================*/
+
+.topbar {
+	background-color: #2d2928;
+}
+.topbar__inner {
+	@include row-flex();
+	align-items: center;
+}
+.topbar__menu {
+	@include col();
+	@include size(8);
+	display: flex;
+	a {
+	color: #c4c4c4;
+	font-family: 'Open Sans', sans-serif;
+	font-size: rem(14);
+	font-weight: 400;
+	line-height: 1.2;
+	text-decoration: none;
+	margin-left: 6px;
+	margin-right: 6px;
+	&:first-child{
+		margin-left: 0;
+	}
+	&:last-child{
+		margin-right: 0;
+	}
+	}
+}
+.topbar__socials {
+	@include col();
+	@include size(4);
+	display: flex;
+	margin-left: auto;
+	justify-content: end;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.social {
+	width: 35px;
+	height: 35px;
+	border: 1px #fff solid;
+	border-radius: 50%;
+	position: relative;
+	margin-left: 10px;
+	cursor: pointer;
+	&:first-child {
+		margin-left: 0;
+	}
+}
+.icon{
+	fill: #fff;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*=====  End of TopBar  ======*/

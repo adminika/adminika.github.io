@@ -1,0 +1,11 @@
+/*===================================
+=            ContentMain            =
+===================================*/
+
+.content__main {
+	@include col();
+	@include size(7);
+	@include size-lg(12);
+}
+
+/*=====  End of ContentMain  ======*/

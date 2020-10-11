@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Тестовое задание</title>
+    <meta name="theme-color" content="#fff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="img/favicons/apple-touch-icon-precomposed.png"
+    />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="img/favicons/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/favicons/apple-touch-icon-1024x1024.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script
+      type="text/javascript"
+      src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js "
+    ></script>
+  </head>
+
+  <body>
+    <object
+      type="image/svg+xml"
+      data="img/sprites/sprite.svg"
+      style="display: none;"
+    >
+      Your browser does not support SVG
+    </object>
+    <div class="wrapper">
+      <!-- Sidebar -->
+<aside class="sidebar"><a href="index.html"></a>
+  <div class="sidebar__wrapper">
+    <div class="sidebar__top">
+      <a href="../../index.html">        
+        <img class="sidebar__top-logo" src="./img/svg/logo.svg" alt="logo" />
+      </a>
+      <h1 class="sidebar__top-title">Информационная система</h1>
+    </div>
+
+    <div class="profile__wrapper">
+      <img class="profile__avatar" src="./img/avatar.jpg" alt="avatar" />
+      <span class="profile__name">Петров П.П.</span>
+      <button class="profile__out-btn" type="button">
+        <svg width="18" height="18">
+          <use xlink:href="./img/sprites/sprite.svg#outlined" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="sidebar__navigation">
+      <a class="navigation__link" href="#">
+        <svg class="navigation__icon" width="20" height="20">
+          <use xlink:href="./img/sprites/sprite.svg#pharma" />
+        </svg>
+        <span class="navigation__title">Аптечные сети</span>
+      </a>
+
+      <a class="navigation__link" href="#">
+        <svg class="navigation__icon" width="20" height="20">
+          <use xlink:href="./img/sprites/sprite.svg#courses" />
+        </svg>
+        <span class="navigation__title">Курсы</span>
+      </a>
+
+      <a class="navigation__link" href="#">
+        <svg class="navigation__icon" width="20" height="20">
+          <use xlink:href="./img/sprites/sprite.svg#appli" />
+        </svg>
+        <span class="navigation__title">Заявки</span>
+      </a>
+
+      <a class="navigation__link" href="#">
+        <svg class="navigation__icon" width="20" height="20">
+          <use xlink:href="./img/sprites/sprite.svg#profile" />
+        </svg>
+        <span class="navigation__title">Личный профиль</span>
+      </a>
+    </div>
+  </div>
+</aside>
+<!-- // Sidebar -->
+
+      <main class="content">
+  <header class="content__top">
+    <h1 class="header__title">Заявки</h1>
+    <span class="header__subtitle">Требуют подтверждения</span>
+  </header>
+
+  <section class="content__wrapper">
+    <button type="button" class="btn-modal" id="myBtn">Согласовать</button>
+
+    <div class="table-client">
+      <div class="table-head">
+        <input id="boxx" type="checkbox" />
+        <label for="boxx" class="table-head"></label>
+        <span>Дата</span>
+        <span>ФИО</span>
+        <span>Телефон</span>
+        <span class="farm">Наименование аптеки</span>
+        <span>Адрес филиала</span>
+      </div>
+
+      <input id="box1" type="checkbox" />
+      <label for="box1" class="table-body">
+        <span>31.10.2019</span>
+        <span>Маховиков Анатолий Викторович</span>
+        <span>+7 (303) 555-0105</span>
+        <span class="farm">Аптека 1</span>
+        <span
+          ><svg class="icon-land" width="20" height="15">
+            <use xlink:href="./img/sprites/sprite.svg#rus" /></svg
+          >Свердловская область, Екатеринбур, Центральный, ул. Демидова, д
+          16/1</span
+        >
+      </label>
+
+      <input id="box2" type="checkbox" />
+      <label for="box2" class="table-body">
+        <span>30.10.2019</span>
+        <span>Андреева Марина Александровна</span>
+        <span>+7 (907) 555-0101</span>
+        <span class="farm">Аптека 1</span>
+        <span>
+          <svg class="icon-land" width="20" height="15">
+            <use xlink:href="./img/sprites/sprite.svg#rus" /></svg
+          >Волгоградская область, Волгоград, ул. Красная, д. 45
+        </span>
+      </label>
+
+      <input id="box3" type="checkbox" />
+      <label for="box3" class="table-body">
+        <span>29.10.2019</span>
+        <span>Паршукова Маргарита Юрьевна</span>
+        <span>+7 (217) 555-0113</span>
+        <span class="farm">Аптека 2</span>
+        <span
+          ><svg class="icon-land" width="20" height="15">
+            <use xlink:href="./img/sprites/sprite.svg#rus" /></svg
+          >Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38
+        </span></label
+      >
+
+      <input id="box4" type="checkbox" />
+      <label for="box4" class="table-body">
+        <span>28.10.2019</span>
+        <span>Кузнецова Татьяна Геннадьевна</span>
+        <span>+7 (704) 555-0127</span>
+        <span class="farm">Аптека 2</span>
+        <span
+          ><svg class="icon-land" width="20" height="15">
+            <use xlink:href="./img/sprites/sprite.svg#rus" /></svg
+          >Свердловская область, Екатеринбур, Центральный, ул. Демидова, д 16/1
+        </span></label
+      >
+
+      <input id="box5" type="checkbox" />
+      <label for="box5" class="table-body">
+        <span>27.10.2019</span>
+        <span>Ломакина Надежда Михайловна</span>
+        <span>+7 (207) 555-0119</span>
+        <span class="farm">Аптека 3</span>
+        <span
+          ><svg class="icon-land" width="20" height="15">
+            <use xlink:href="./img/sprites/sprite.svg#rus" /></svg
+          >Волгоградская область, Волгоград, ул. Красная, д. 45
+        </span></label
+      >
+
+      <input id="box6" type="checkbox" />
+      <label for="box6" class="table-body">
+        <span>26.10.2019</span>
+        <span>Текутьев Александр Александрович</span>
+        <span>+7 (219) 555-0114</span>
+        <span class="farm">Аптека 3</span>
+        <span
+          ><svg class="icon-land" width="20" height="15">
+            <use xlink:href="./img/sprites/sprite.svg#rus" /></svg
+          >Вологодская область, Вологда, Железнодорожный, ул. Вокзальная, д. 38
+        </span></label
+      >
+
+      <input id="box7" type="checkbox" />
+      <label for="box7" class="table-body">
+        <span>26.10.2019</span>
+        <span>Попова Анастасия Владимировна</span>
+        <span>+7 (229) 555-0109</span>
+        <span class="farm">Аптека 3</span>
+        <span
+          ><svg class="icon-land" width="20" height="15">
+            <use xlink:href="./img/sprites/sprite.svg#rus" /></svg
+          >Свердловская область, Екатеринбур, Центральный, ул. Демидова, д 16/1
+        </span></label
+      >
+
+      <input id="box8" type="checkbox" />
+      <label for="box8" class="table-body">
+        <span>11.06.1987</span>
+        <span>Пономарев Николай Сергеевич</span>
+        <span>+7 (913) 733-7890</span>
+        <span class="farm">Аптека 4</span>
+        <span
+          ><svg class="icon-land" width="20" height="15">
+            <use xlink:href="./img/sprites/sprite.svg#rus" /></svg
+          >Новосибирская область, Новосибирск, Центральный, ул. Ломоносова, д.
+          59/1
+        </span></label
+      >
+    </div>
+  </section>
+</main>
+
+      <div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close"></span>
+    </div>
+    <div class="modal-body">
+      <span class="modal-title">Согласование</span>
+
+      <div class="seldiv">
+        <form action="#" method="post">
+          <span class="select-title">Решение</span>
+          <div class="__select" data-state="">
+            <div class="__select__title" data-default="Согласовать">
+              Согласовать
+            </div>
+            <div class="__select__content">
+              <input
+                id="singleSelect0"
+                class="__select__input"
+                type="radio"
+                name="singleSelect"
+                checked
+              />
+              <label for="singleSelect0" class="__select__label"
+                >Согласовать</label
+              >
+              <input
+                id="singleSelect1"
+                class="__select__input"
+                type="radio"
+                name="singleSelect"
+              />
+              <label for="singleSelect1" class="__select__label"
+                >Утвердить</label
+              >
+              <input
+                id="singleSelect2"
+                class="__select__input"
+                type="radio"
+                name="singleSelect"
+                disabled
+              />
+              <label for="singleSelect2" class="__select__label"
+                >Отменить</label
+              >
+              <input
+                id="singleSelect3"
+                class="__select__input"
+                type="radio"
+                name="singleSelect"
+              />
+              <label for="singleSelect3" class="__select__label"
+                >Техническая помощь</label
+              >
+              <input
+                id="singleSelect4"
+                class="__select__input"
+                type="radio"
+                name="singleSelect"
+              />
+              <label for="singleSelect4" class="__select__label"
+                >Консультация</label
+              >
+            </div>
+          </div>
+
+          <div class="textarea__wrapper">
+            <span class="select-title">Комментарий</span>
+
+            <textarea
+              placeholder="При отрицательном решении по заявке заполните поле 
+комментарий"
+              class="txta"
+            ></textarea>
+          </div>
+
+          <div class="form-btn">
+            <button type="submit" class="btn_puch">Добавить</button>
+            <input type="reset" class="reset" value="Отменить" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/vendor.js"></script> -->
+  </body>
+</html>

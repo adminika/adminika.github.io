@@ -1,0 +1,76 @@
+/*===============================
+=            SideBar            =
+===============================*/
+
+.sidebar {
+	@include col();
+	@include size(5);
+	@include size-lg(12);
+
+}
+.sidebar__inner {
+	@include row-flex();
+}
+.advert {
+	@include col();
+	@include size(6);
+	@include lg-block() {
+		display: none;
+	}
+}
+.categories{
+	@include col();
+	@include size(6);
+	@include size-lg(12);
+	@include lg-block() {
+		@include row-flex();
+		margin: 15px auto 0;
+		&__inner {
+			@include col();
+			@include size(4);
+		}
+	}
+}
+.sidebar__title {
+	color: #666;
+	font-size: rem(14);
+	font-weight: bold;
+	line-height: 1;
+	margin-bottom: 18px;
+	&::before {
+		display: block;
+		content: " ";
+		width: 100%;
+		height: 5px;
+		background-color: #999;
+		margin-bottom: 6px;
+	}
+}
+.sidebar__title:first-child {
+	@include lg-block() {
+		margin-top: 18px;
+	}
+}
+.mg-top {
+	margin-top: 26px;
+}
+.advert__img {
+	width: 100%;
+	img {
+		display: block;
+	}
+}
+
+.categories__inner {
+	display: flex;
+	flex-direction: column;
+}
+.categories__link {
+	color: #982216;
+	font-size: rem(14);
+	font-weight: 400;
+	text-decoration: none;
+	line-height: 1.3;
+}
+
+/*=====  End of SideBar  ======*/
